@@ -3,7 +3,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.linear_model import SGDClassifier
 
 class my_model():
-    def __init__(self, loss="perceptron", learning_rate_type="adaptive", initial_learning_rate=0.1, shuffle=False):
+    def __init__(self, loss="hinge", learning_rate_type="adaptive", initial_learning_rate=0.2, shuffle=False):
         self.loss = loss
         self.learning_rate_type = learning_rate_type
         self.initial_learning_rate = initial_learning_rate
